@@ -1,7 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Hook ConfigCat up via the application builder
+builder.UseConfigCat();
 
 var app = builder.Build();
 

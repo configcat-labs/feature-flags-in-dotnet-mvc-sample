@@ -7,4 +7,8 @@
     <RootNamespace>feature_flags_in_dotnet_mvc_sample</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ConfigCat.Extensions.Hosting" Version="10.0.0" />
+  </ItemGroup>
+
 </Project>
