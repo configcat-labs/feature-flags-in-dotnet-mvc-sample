@@ -1,5 +1,7 @@
 # How to Use Feature Flags in an ASP.NET Core MVC Application
 
+**[Read the blog post here](https://configcat.com/blog/feature-flags-in-dotnet-mvc/)**
+
 This is a minimal sample app simulating a success page that appears once the user has successfully registered on the website. A feature flag is used in order to enable/disable a message that invites the user to subscribe to the newsletter. For managing the flag, ConfigCat's feature flag management system is used.
 
 ## Setup and Run
@@ -8,11 +10,12 @@ This is a minimal sample app simulating a success page that appears once the use
 2. Open the project in Visual Studio Code or any other .NET and C#-compatible IDE.
 3. In `appsettings.Development.json` and `appsettings.json`, within the `ConfigCat` block, replace the placeholder with your actual ConfigCat SDK Key. It is recommended to use separate SDK Keys for development and production.
 4. Launch the app with the following command:
+
    ```bash
    dotnet run
    ```
 
-Go to the ConfigCat Dashboard to enable/disable the feature flag. Wait a few seconds for the change to propagate, then refresh the page in your browser.
+5. Toggle the feature flag in the [ConfigCat Dashboard](https://app.configcat.com) to enable and disable the **Join our mailing list** button. Wait a few seconds for the change to propagate, then refresh the page in your browser.
 
 ## Learn more
 
