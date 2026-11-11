@@ -1,0 +1,13 @@
+﻿@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>Thank you for registering on our website.</p>
+    @if (Model.MailingListEnabled)
+    {
+        <button class="btn btn-danger">Join our mailing list</button>
+    }
+</div>
